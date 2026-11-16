@@ -1,0 +1,532 @@
+
+/* =====================================
+   1. COLOUR PALETTE
+   ===================================== */
+
+/*
+   Sage Green     - #AAB99A
+   Warm Ivory     - #F8F2E8
+   Dark Brown     - #443B32
+   Muted Brown    - #887B6D
+   Light Beige    - #E9E0D3
+   Soft White     - #FFFDF8
+*/
+
+
+/* =====================================
+   2. BASIC PAGE SETTINGS
+   ===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #AAB99A;
+    color: #443B32;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   3. HEADER AND NAVIGATION
+   ===================================== */
+
+header {
+    background-color: #F8F2E8;
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #D8CEBF;
+}
+
+header h1 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #443B32;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #9A795A;
+}
+
+header button {
+    background-color: transparent;
+    color: #443B32;
+    border: 1px solid #887B6D;
+    padding: 9px 16px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   4. MAIN CONTENT
+   ===================================== */
+
+main {
+    width: 88%;
+    max-width: 1150px;
+    margin: 45px auto;
+    background-color: #F8F2E8;
+    padding: 45px;
+}
+
+section {
+    padding: 55px 0;
+    border-bottom: 1px solid #D8CEBF;
+    scroll-margin-top: 25px;
+}
+
+section h2 {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+section p {
+    color: #71665B;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+section ul {
+    padding-left: 22px;
+    color: #71665B;
+}
+
+section li {
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   5. HOME SECTION
+   ===================================== */
+
+#home {
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background-color: #E9E0D3;
+    padding: 45px;
+}
+
+#home h2 {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#home img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    filter: sepia(12%);
+    transition: filter 0.4s ease;
+}
+
+#home img:hover {
+    filter: sepia(0%);
+}
+
+#home h1 {
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+#home h3 {
+    font-size: 15px;
+    color: #887B6D;
+}
+
+#home a {
+    display: inline-block;
+    color: #443B32;
+    text-decoration: none;
+    border-bottom: 1px solid #887B6D;
+    margin: 15px 15px 0 0;
+    padding-bottom: 4px;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+#home a:hover {
+    color: #A17C55;
+}
+
+
+/* =====================================
+   6. ABOUT ME
+   ===================================== */
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 50px;
+}
+
+#about h2 {
+    grid-column: 1 / -1;
+}
+
+#about h3 {
+    margin-top: 10px;
+}
+
+#about ul {
+    grid-column: 2;
+}
+
+
+/* =====================================
+   7. QUICK FACTS
+   ===================================== */
+
+#quick-facts {
+    background-color: #EEE7DB;
+    padding: 35px;
+}
+
+#quick-facts ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 35px;
+    list-style: none;
+    padding: 0;
+}
+
+#quick-facts li {
+    border-bottom: 1px solid #D8CEBF;
+    padding: 10px 0;
+}
+
+
+/* =====================================
+   8. EDUCATION
+   ===================================== */
+
+#education article {
+    padding: 22px 0;
+    border-bottom: 1px solid #D8CEBF;
+}
+
+#education article:last-child {
+    border-bottom: none;
+}
+
+#education article h3 {
+    font-size: 19px;
+}
+
+
+/* =====================================
+   9. SKILLS
+   ===================================== */
+
+#skills ul {
+    margin-bottom: 30px;
+}
+
+#skills progress {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 7px;
+    margin-top: 7px;
+    accent-color: #899A79;
+}
+
+
+/* =====================================
+   10. PROJECTS
+   ===================================== */
+
+#projects article {
+    padding: 25px 0;
+    border-bottom: 1px solid #D8CEBF;
+    transition: padding-left 0.3s ease;
+}
+
+#projects article:hover {
+    padding-left: 12px;
+}
+
+#projects article h3 {
+    font-size: 20px;
+}
+
+#projects article a {
+    display: inline-block;
+    color: #443B32;
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 1px solid #887B6D;
+    padding-bottom: 3px;
+    margin-top: 5px;
+}
+
+
+/* =====================================
+   11. CURRENTLY LEARNING
+   ===================================== */
+
+#learning {
+    background-color: #EEE7DB;
+    padding: 35px;
+}
+
+#learning ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 30px;
+}
+
+
+/* =====================================
+   12. HOBBIES
+   ===================================== */
+
+#hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 35px;
+}
+
+#hobbies h2 {
+    grid-column: 1 / -1;
+}
+
+#hobbies article {
+    padding: 20px 0;
+    border-top: 1px solid #D8CEBF;
+    transition: transform 0.3s ease;
+}
+
+#hobbies article:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =====================================
+   13. ACHIEVEMENTS
+   ===================================== */
+
+#achievements article {
+    padding: 22px 0;
+    border-bottom: 1px solid #D8CEBF;
+}
+
+#achievements article h3 {
+    font-size: 19px;
+}
+
+
+/* =====================================
+   14. CONTACT SECTION
+   ===================================== */
+
+#contact {
+    background-color: #EEE7DB;
+    padding: 40px;
+}
+
+#contact a {
+    color: #443B32;
+    text-decoration: none;
+    border-bottom: 1px solid #887B6D;
+}
+
+#contact a:hover {
+    color: #A17C55;
+}
+
+form {
+    max-width: 550px;
+    margin-top: 25px;
+}
+
+form label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+    background-color: #FFFDF8;
+    border: 1px solid #CFC3B3;
+    border-radius: 0;
+    color: #443B32;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #899A79;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #443B32;
+    color: #F8F2E8;
+    border: 1px solid #443B32;
+    padding: 13px 25px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #899A79;
+    border-color: #899A79;
+}
+
+
+/* =====================================
+   15. FOOTER
+   ===================================== */
+
+footer {
+    background-color: #443B32;
+    color: #F8F2E8;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 12px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    display: inline-block;
+    color: #F8F2E8;
+    text-decoration: none;
+    border-bottom: 1px solid #F8F2E8;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   16. RESPONSIVE DESIGN
+   ===================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    #home {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    #home img {
+        height: 280px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    #about,
+    #hobbies {
+        grid-template-columns: 1fr;
+    }
+
+    #about ul {
+        grid-column: 1;
+    }
+
+    #quick-facts ul,
+    #learning ul {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    section {
+        padding: 35px 0;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+}
